@@ -9,6 +9,6 @@ meteor build /some/path/deploy
 And push it to bluemix
 ```
 cd /some/path/deploy
-cf push app -b https://github.com/tadasdanielius/cf-meteor-pb-buildback.git
+cf push app_name -b https://github.com/tadasdanielius/cf-meteor-pb-buildback.git
 ```
 
