@@ -42,8 +42,12 @@ install_node() {
 
 build() {
   (
+    status "ls -la app 1"
     ls -la app
     tar -xzf *.tar.gz
+    status "ls -la app 2"
+    ls -la app
+    pwd
     cd app/bundle/programs/server
     status "Installing npm dependencies"
     npm install 2>&1 | indent
