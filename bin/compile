@@ -44,14 +44,15 @@ build() {
   (
     status "build directory is"
     echo $BUILD_DIR
+    cd $BUILD_DIR
     status "untaring"
-    tar -xzf *.tar.gz -C $BUILD_DIR 
+    tar -xzf *.tar.gz
     status "ls -la $BUILD_DIR"
     ls -la $BUILD_DIR
     status "pwd"
     pwd
     
-    cd app/bundle/programs/server
+    cd bundle/programs/server
     status "Installing npm dependencies"
     npm install 2>&1 | indent
     mv $BUILD_DIR/.vendor $BUILD_DIR/vendor
