@@ -40,8 +40,6 @@ install_node() {
 
 build() {
   (
-    cd $BUILD_DIR
-
     tar -xzf *.tar.gz
     cd bundle/programs/server
     status "Installing npm dependencies"
