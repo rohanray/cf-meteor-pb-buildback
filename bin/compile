@@ -46,12 +46,15 @@ build() {
     ls -la app
     status "pwd 1"
     pwd
+    status "build directory is"
+    echo $BUILD_DIR
     status "untaring"
     tar -xzf *.tar.gz
     status "ls -la app 2"
     ls -la app
     status "pwd 2"
     pwd
+    
     cd app/bundle/programs/server
     status "Installing npm dependencies"
     npm install 2>&1 | indent
