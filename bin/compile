@@ -44,7 +44,7 @@ build() {
   (
     ls -la
     tar -xzf *.tar.gz
-    cd bundle/programs/server
+    cd app/bundle/programs/server
     status "Installing npm dependencies"
     npm install 2>&1 | indent
     mv $BUILD_DIR/.vendor $BUILD_DIR/vendor
