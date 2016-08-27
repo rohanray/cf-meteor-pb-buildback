@@ -43,7 +43,7 @@ install_node() {
 build() {
   (
     status "ls -la app 1"
-    ls -la app
+    ls -la
     status "pwd 1"
     pwd
     status "build directory is"
