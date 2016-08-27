@@ -42,7 +42,7 @@ install_node() {
 
 build() {
   (
-    ls -la
+    ls -la app
     tar -xzf *.tar.gz
     cd app/bundle/programs/server
     status "Installing npm dependencies"
